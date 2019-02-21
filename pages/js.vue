@@ -1,7 +1,23 @@
 <template>
   <div>
-    <h1>jstop.heroku.com</h1>
-    <nuxt-link to="/js">js page</nuxt-link>
+    <h1>Js page</h1>
+    <nuxt-link to="/">
+      Главная
+    </nuxt-link>
+    <pre>
+      <code class="javascript">
+    console.log('highlight js code')
+  </code>
+  </pre>
+    <span>test highlight</span>
+    <pre>
+      <code class="javascript">
+    let arr = ['banan', 'apple', 'lemon'];
+        arr.forEach(fruit => {
+          console.log(fruit)
+        })
+  </code>
+  </pre>
   </div>
 </template>
 
@@ -11,8 +27,9 @@
     import 'highlight.js/styles/ocean.css';
 
     hljs.registerLanguage('javascript', javascript);
+
     export default {
-        name: "Index",
+        name: "Js",
         mounted() {
             [...document.getElementsByClassName('javascript')].forEach(code => {
                 hljs.highlightBlock(code)

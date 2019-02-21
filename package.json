@@ -12,6 +12,7 @@
   "author": "Roman Bronevik",
   "license": "ISC",
   "dependencies": {
+    "highlight.js": "^9.14.2",
     "nuxt": "^2.4.3"
   },
   "devDependencies": {
