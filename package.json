@@ -6,7 +6,8 @@
     "generate": "nuxt generate",
     "start": "HOST=127.0.0.1 PORT=3337 nuxt start",
     "build": "nuxt build",
-    "dev": "HOST=127.0.0.1 PORT=3337 nuxt"
+    "dev": "HOST=127.0.0.1 PORT=3337 nuxt",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Roman Bronevik",
   "license": "ISC",
